@@ -2,6 +2,12 @@
    
     box-sizing: content-box;
 }
+body{
+  background-color: silver;
+  background-image: url(Images/background.jpg);
+  background-size: cover;
+  background-position: center;
+}
 .text-large{
   font-size: large;
 }
@@ -16,6 +22,15 @@
     transition: all 1s ease;
     
 }
+.nav-link:hover{
+  text-shadow: -1px 1px 1px rgba(255, 255, 255, 0.5),
+				  1px 1px 1px rgba(255, 255, 255, 0.5),
+				 1px -1px 1px rgba(255, 255, 255, 0.5),
+				-1px -1px 1px rgba(255, 255, 255, 0.5);
+}
+.dropdown-item:hover{
+  max-width: 80%;
+}
 .logo{
     width: 25px;
     height: 25px;
@@ -23,6 +38,7 @@
 /* end nav */
 main{
   height: 100vh;
+
 }
 /* spiral text */
 #spiral{
@@ -43,9 +59,41 @@ main{
   
 }
 /* end spiral */
-.desktop{
-  position: absolute;
+/* about me */
+
+/* end about */
+
+
+.preview{
+  display: inline-block;
+  position: relative;
   left: 0;
   top: 0;
-  width: 50px;
+
+}
+.links{
+  display: inline-block;
+  justify-items: center;
+}
+.desktop{
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 114px;
+  height: 74px;
+}
+.mobile{
+  position: absolute;
+  left: 25px;
+  top: 5px;
+  width: 114px;
+  width: 80px;
+  height: 114px;
+}
+.button-group{
+  position: relative;
+}
+.buttons{
+  position: absolute;
+  top: 0%;
 }
